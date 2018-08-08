@@ -1,0 +1,123 @@
+/*homeIndex styling*/
+
+/*To make img cover the bg*/
+body, html {
+    height: 100%;
+    position: relative;
+}
+.bg1 {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/346796/pexels-photo-346796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    -webkit-animation-name: kids; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: kids;
+    animation-duration: 10s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes kids {
+    0%   {background-image: url("https://images.pexels.com/photos/346796/pexels-photo-346796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    50%  {background-image: url("https://images.pexels.com/photos/259704/pexels-photo-259704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    100% {background-image: url("https://images.pexels.com/photos/166055/pexels-photo-166055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+}
+
+/* Standard syntax */
+@keyframes kids {
+     0%   {background-image: url("https://images.pexels.com/photos/346796/pexels-photo-346796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    50%  {background-image: url("https://images.pexels.com/photos/259704/pexels-photo-259704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    100% {background-image: url("https://images.pexels.com/photos/166055/pexels-photo-166055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+}
+
+
+.navbar {
+  padding: 0 1rem;
+  @media(max-width: 991px) {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+ 
+ .navbar-nav {
+    .nav-link {
+      display: flex;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      height: 56px;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      align-items: center;
+      flex-shrink: 0;
+      } 
+      
+
+
+.slideInRight {
+    transition-property: width 75%;
+    transition-timing-function: linear;
+    transition-duration: 15s;
+}
+
+footer { 
+    position: absolute;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+
+
+
+
+/*Finance Portfolio Page*/
+
+.bg2 {
+    background-color: transparent; 
+    background-size: cover;
+
+   
+}
+
+#watch {
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center; 
+    margin-top: 25px;
+}
+
+ #green {
+     font-family: 'Sanchez', sans-serif;
+     color: #008000;
+ }
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+/*table styles*/
+table {
+  align-self: center;
+  background-color: white;
+  opacity: 0.9;
+}
+
+th, td {
+    font-size: 13px;
+    padding: 7px;
+    text-align: center;
+}
+
+tr: hover {
+    background-color: #cceeff;
+}
+.positiveNum {
+    color: #009900;
+}
+
+.negativeNum {
+    color: #ff3300;
+}
+
+}
